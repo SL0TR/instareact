@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%;
+  // overflow-x: hidden;
+  // scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  // overflow-x: hidden;
+}
+
+button {
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.wrapper {
+  max-width: 192rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container {
+  @include respond(tab-port) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

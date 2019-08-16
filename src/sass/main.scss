@@ -1,0 +1,16 @@
+//import all sass files
+@import './lib/bootstrap-grid.min';
+@import './abstracts/mixins';
+@import './abstracts/_variables.scss';
+@import './abstracts/animations';
+
+@import './base/_utilities.scss';
+@import './base/_typography.scss';
+@import './base/_base.scss';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/button';
+
+@import '../component/home/index.scss';
