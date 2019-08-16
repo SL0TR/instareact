@@ -1,11 +1,12 @@
-import React from './node_modules/react';
+import React from 'react'
 
-const Photogrid = () => {
+
+const PhotoGrid = () => {
   return ( 
     <>
-      <h2>I'm Photogrid</h2>
+      <h2>I'm PhotoGrid</h2>
     </>
    );
 }
  
-export default Photogrid;
+export default PhotoGrid;
