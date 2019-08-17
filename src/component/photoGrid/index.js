@@ -9,7 +9,7 @@ const PhotoGrid = () => {
     <>
       <h2>I'm PhotoGrid</h2>
       <div className="photogrid">
-        {posts && posts.map(post => <Photo post={post} key={post.id} />)}
+        {posts && posts.map((post, i) => <Photo post={post} index={i} key={post.id} />)}
       </div>
     </>
    );
