@@ -6,11 +6,14 @@ import { increment } from '../../actions/actionCreate';
 
 const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
 
+  console.log()
   const dispatch = useDispatch();
 
   return ( 
     <figure>
-      <Link to={`/photo/${code}`}>
+      <Link to={{
+          pathname: `/photo/${code}`
+        }}>
         <img src={display_src} alt={caption}/>
       </Link>
       <figcaption>
@@ -18,7 +21,9 @@ const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
       </figcaption>
       <div className="control-btns">
         <button onClick={() => dispatch(increment(index))}>&hearts; {likes}</button>
-        <Link to={`/photo/${code}`}>
+        <Link to={{
+          pathname: `/photo/${code}`
+        }}>
           <span>comment
           </span>
         </Link>
