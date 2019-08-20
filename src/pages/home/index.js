@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoGrid from '../photoGrid';
+import PhotoGrid from '../../components/photoGrid';
 
 const Home = () =>  <PhotoGrid  />
  

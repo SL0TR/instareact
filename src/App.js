@@ -2,8 +2,8 @@ import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 // import ReduxWrapper from './component/reduxWrapper';
-import Home from './component/home';
-import SinglePhoto from './component/singlePhoto';
+import Home from './pages/home';
+import SinglePhoto from './pages/singlePhoto';
 import store from './store';
 import { Container } from 'semantic-ui-react'
 import { Menu } from 'semantic-ui-react'
