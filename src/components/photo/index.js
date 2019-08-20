@@ -1,17 +1,18 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../actions/actionCreate';
-
 import { Card, Icon, Image, Button, Label } from 'semantic-ui-react'
+
 const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
 
+  const comments = useSelector(state => state.comments);
   const dispatch = useDispatch();
 
   return ( 
     <Card fluid>
     <Image  
       as='a'
-      src={display_src} wrapped ui={false}
+      src={display_src ? display_src : 'https://picsum.photos/400/400/'} wrapped ui={false}
       href={`/photo/${code}`}
       />
     <Card.Content>
@@ -33,7 +34,7 @@ const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
         <Icon name='comment' />
       </Button>
       <Label as='a' basic color='blue' pointing='left'>
-        2,048
+        {comments[code] ? comments[code].length : 0 }
       </Label>
     </Button>
     </Card.Content>
