@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../actions/actionCreate';
 import { Card, Icon, Image, Button, Label } from 'semantic-ui-react'
-
+import { Link } from 'react-router-dom';
 const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
 
   const comments = useSelector(state => state.comments);
@@ -23,17 +23,17 @@ const Photo = ({ post: { code, display_src, caption, likes }, index }) => {
     <Card.Content extra>
     <Button as='div' labelPosition='right' onClick={() => dispatch(increment(index))}>
       <Button basic color='teal'>
-        <Icon name='heart' />
+        <Icon name='heart outline' />
       </Button>
       <Label as='a' basic color='teal' pointing='left'>
         {likes}
       </Label>
     </Button>
-    <Button labelPosition='right' as='a' href={`/photo/${code}`}>
+    <Button labelPosition='right' as={Link} to={`/photo/${code}`}>
       <Button basic color='blue' >
-        <Icon name='comment' />
+        <Icon name='comment outline' />
       </Button>
-      <Label as='a' basic color='blue' pointing='left'>
+      <Label basic color='blue' pointing='left'>
         {comments[code] ? comments[code].length : 0 }
       </Label>
     </Button>

@@ -6,22 +6,15 @@ import Home from './pages/home';
 import SinglePhoto from './pages/singlePhoto';
 import store from './store';
 import { Container } from 'semantic-ui-react'
-import { Menu } from 'semantic-ui-react'
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <Menu>
-        <Menu.Item
-          name='editorials'
-        >
-          Instareact!
-        </Menu.Item>
-
-      </Menu>
       <Container>
       <Provider store={store}>
         <Router>
+          <Header />
           <Route exact path="/" component={Home} />
           <Route exact path="/photo/:postId" component={SinglePhoto} />
         </Router>
