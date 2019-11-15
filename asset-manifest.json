@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/instareact/static/js/main.7ff28833.chunk.js",
+    "main.js.map": "/instareact/static/js/main.7ff28833.chunk.js.map",
+    "runtime~main.js": "/instareact/static/js/runtime~main.7cadd932.js",
+    "runtime~main.js.map": "/instareact/static/js/runtime~main.7cadd932.js.map",
+    "static/css/2.b247bcbc.chunk.css": "/instareact/static/css/2.b247bcbc.chunk.css",
+    "static/js/2.1b87feeb.chunk.js": "/instareact/static/js/2.1b87feeb.chunk.js",
+    "static/js/2.1b87feeb.chunk.js.map": "/instareact/static/js/2.1b87feeb.chunk.js.map",
+    "index.html": "/instareact/index.html",
+    "precache-manifest.e5de850dc7b94ca86ab805f987bc46ef.js": "/instareact/precache-manifest.e5de850dc7b94ca86ab805f987bc46ef.js",
+    "service-worker.js": "/instareact/service-worker.js",
+    "static/css/2.b247bcbc.chunk.css.map": "/instareact/static/css/2.b247bcbc.chunk.css.map",
+    "static/media/semantic.min.css": "/instareact/static/media/outline-icons.ef60a4f6.woff"
+  }
+}
